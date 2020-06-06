@@ -19,7 +19,7 @@ let SUB_EVENT_IS_USER_CONNECTED = 'is_user_connected';
 
 let listen_port = 4002;
 
-// Status
+// Status	
 let STATUS_MESSAGE_NOT_SENT = 10001;
 let STATUS_MESSAGE_SENT = 10002;
 
