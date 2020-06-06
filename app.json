@@ -1,3 +1,6 @@
 {
-    "name":"chat-app-backend"
+    "name":"chat-app-backend",
+    "description":"backened callbacks for a real time chat app",
+    "repository":"https://github.com/SankhaJay/chat-backend",
+    "keywods":["node","express"]
 }
