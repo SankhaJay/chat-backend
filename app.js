@@ -17,7 +17,8 @@ let SUB_EVENT_RECEIVE_MESSAGE = 'receive_message';
 let SUB_EVENT_MESSAGE_FROM_SERVER = 'message_from_server';
 let SUB_EVENT_IS_USER_CONNECTED = 'is_user_connected';
 
-let listen_port = 4002 || process.env.PORT;
+// let listen_port = 4002 || process.env.PORT;
+app.set('port', (process.env.PORT || 4000));
 
 // Status	
 let STATUS_MESSAGE_NOT_SENT = 10001;
@@ -179,4 +180,8 @@ function printNumOnlineUsers() {
 	print('Online Users: ' + userMap.size);
 }
 
-server.listen(listen_port);
+// server.listen(listen_port);
+server.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+//   logger.info('Node app is running on port', app.get('port'));
+});
