@@ -18,7 +18,7 @@ let SUB_EVENT_MESSAGE_FROM_SERVER = 'message_from_server';
 let SUB_EVENT_IS_USER_CONNECTED = 'is_user_connected';
 
 // let listen_port = 4002 || process.env.PORT;
-app.set('port', (process.env.PORT || 4000));
+app.set('port', (process.env.PORT || 80));
 
 // Status	
 let STATUS_MESSAGE_NOT_SENT = 10001;
